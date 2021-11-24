@@ -14,6 +14,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "dev": "TAILWIND_MODE=watch postcss -i tailwind.css -o build.css --watch",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

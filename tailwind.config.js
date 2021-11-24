@@ -1,9 +1,14 @@
 module.exports = {
-  mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // you can specify your own colors, font families etc here.
+        primary: '#1301fe',
+        secondary: '#ffb6c1',
+      },
+    },
   },
   variants: {
     extend: {},

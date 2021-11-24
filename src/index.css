@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+/* If you want to create your custom classes you need to wrap that with a layer of components. and then add apply into that styling block to use tailwind classes inside of there. Could be good to do for some elements that are repeating many times, or for elements with a lot of styling. */
+@layer components {
+  .post-card {
+    @apply bg-white container mx-auto p-4 rounded-tl-lg flex flex-col items-center mt-2 shadow-xl hover:bg-primary hover:text-secondary cursor-pointer;
+  }
+}
+
 @tailwind utilities;
